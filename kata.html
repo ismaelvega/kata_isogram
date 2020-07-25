@@ -7,7 +7,22 @@
 </head>
 <body>
     <script>
+        const WORD = 'loco';
+        var array = [];
+        var accountant = 0;
+        for (var i = 0; i < WORD.length; i++) {
+            array.push(WORD.charAt(i));
+
+            if(array.includes(WORD.charAt(i))){
+                accountant++;
+                console.log(accountant)
+            } 
         
+        }   
+        console.log(array)
+        if(accountant > WORD.length){
+            console.log('hey que paso')
+        }
     </script>
 </body>
 </html>
